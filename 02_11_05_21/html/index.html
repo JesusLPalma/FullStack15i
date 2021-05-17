@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Clase 2 - TAGS / etiquetas
+        </title>
+        <style>
+            tr::before{
+                content: 'a';
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Clase 2 - TAGS - Etiquetas</h1>
+        </header>
+
+        <main>
+            <!-- Listas Desordenadas -->
+            <h2>Ingredientes de Ñoquis</h2>
+            <ul>
+                <li> Papa</li>
+                <li> Leche </li>
+                <li> Harina</li>
+                <li> Nues mozcada</li>
+                <li> Opcionales: 
+                    <ul>
+                        <li>Salsa Roja</li>
+                        <li>Salsa Blanca</li>
+                        <li>Carne:
+                            <ul>
+                                <li>Molida</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Listas Ordenadas -->
+            <h2>Receta:</h2>
+            <ol type="1">
+                <li> Primero</li>
+                <li> Segundo </li>
+                <li> Tercero
+                    <details>
+                        <summary>Tercer Paso</summary>
+                    <ul type="a" >
+                        <li> 1</li>
+                        <li> 2</li>
+                        <li> 3</li>
+                    </ul>
+                    
+                </details>
+                <details>
+                    <summary>Cuarto Paso</summary>
+                 <h4>Un Titulo mas chicop</h4>
+                 <video autoplay muted controls width="150" heigth="120">
+                    <source src="/video1.mp4"  >
+                    <source src="/video4.3gp">
+                    <source src="/video4.mp4">
+                    </video>
+                </ul>
+                
+            </details>
+
+                </li>
+            </ol>
+            <!-- Tablas -->
+            <!-- Apertura de tabla-->
+            <table border>
+
+                <caption><h3>Tabla 1</h3></caption>
+                <!-- Table Row / Fila-->
+                <thead>
+                <tr>
+                    <!--Table head / Cabecera-->
+                    <th>Direccion</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- Table Data o  Celda-->
+                    <td> <a href="http://google.com">Google.com</a></td>
+                    <td> <img src="/img/memes/meme1.jpg" width="150" height="120"> </td>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                    <td>Dato 5</td>
+                </tr>
+                <tr>
+                    <td> B Dato 1</td>
+                    <td> <img src="/img/memes/meme3.gif" width="150" height="120" alt="Meme2"> </td>
+                    <td> 
+                        <video autoplay muted controls width="150" heigth="120">
+                        <source src="/video1.mp4"  >
+                        <source src="/video4.3gp">
+                        <source src="/video4.mp4">
+                        </video>
+                    </td>
+                    <td> 
+                        <iframe width="200" height="150" src="../index2.html"></iframe>
+                    </td>
+                    <td> 
+                        <audio>
+                        <source src="/video1.mp4">
+                        </audio></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Path  -->
+            <!--Absolutos: Apuntan una direccion fija, por ej: http://google.com -->
+    
+            <!--Relativos-->
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
