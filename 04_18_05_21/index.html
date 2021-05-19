@@ -3,35 +3,30 @@
     <head>
         <title>Clase 3 - Repaso e Intro a Formularios</title>
         <meta charset="UTF-8">
-        <style>
-
-        </style>
     </head>
 
     <body>
         <header>
             <nav>
-                <h1>Clase 3: Repaso e Intro a Formularios </h1>
+                <h1 id="titulo_principal">Clase 3: Repaso e Intro a Formularios </h1>
                 <hr>
-                | <a href="#repaso"><label>Repaso</label></a>
+                | <a href="#repaso" class><label>Repaso</label></a>
                 | <a href="#formularios"><label>Formularios</label></a>
                 | <a href="#imagen"><label>Tips Extra</label></a>
-                | <hr/>
-            </nav>
-            | <a href="#tips"><label>Tips Extra</label></a>
-
+                | <a href="#tips"><label>Tips Extra</label></a>
+                | 
+                <hr/>
+            </nav>       
         </header>
-        
         <main>
             <h2>Repaso cortito:</h2>
-            <section id="repaso">
+            <section>
             <ul>
-                <li class="negrita" ><h3>HTML:</h3> Lenguaje de marcado , se utilizan etiquetas para decirle al navegador donde debe empezar y donde terminar un elemento. las etiquetas se ponen como &#60etiqueta&#62 (para apertura)  y  &#60etiqueta/&#62 (para cierre) </li>
-                
+                <li ><h3>HTML:</h3> Lenguaje de marcado , se utilizan etiquetas para decirle al navegador donde debe empezar y donde terminar un elemento. las etiquetas se ponen como &#60etiqueta&#62 (para apertura)  y  &#60etiqueta/&#62 (para cierre) </li>
                 
                 <li ><h3>Etiquetas basicas:</h3> 
                 <ul>
-                    <li class="negrita"><p>&#60!DOCTYPE html&#62 : Marca al navegador el tipo de archivo que usamos </p></li>
+                    <li ><p>&#60!DOCTYPE html&#62 : Marca al navegador el tipo de archivo que usamos </p></li>
                     <li><p>&#60html&#62 &#60/html&#62 : Inicio y fin del codigo html </p></li>
                     <li><p>&#60head&#62 &#60/head&#62 : dentro se engloban metadatos </p></li>
                     <li><p>&#60title&#62 &#60/title&#62 : se enceuntra dentro del head, y representa lo que se lee en la pestaña del navegador </p></li>
@@ -160,7 +155,7 @@
                 <h3>El tag &#60form&#62 &#60/form&#62:</h3>
                 <p>Lo que este dentro de estos tags sera considerado como un grupo de datos, en caso de que tengamos varios &#60form&#62, la apertura y cierre de estos va a determinar que datos son enviados hacia el objetivo</p>
                 
-                <form id="form1" name="form1"  action="" method="" target="_blank"  style="border: 1px solid black;">
+                <form id="form1" name="form1"  action="receptor.php" method="POST" target="_blank"  style="border: 1px solid black;">
                     <label for="nombre">Email</label>
                     <input id="email" placeholder="email" name="email" type="email" >
                     <label for="password">Contraseña</label>
@@ -182,12 +177,12 @@
                 <p>
                     los inputs (en castellano "aporte"), son los campos donde se ingresaran los datos, y hay tantos tipos de inputs, como tipos de datos nos permite recibir el navegador
                    
-                    <form action="../ejemplos/receptor.php" method="GET" target="_blank">
+                    <form action="" method="GET" target="_blank">
                      <input type="submit" value="Enviar">
                       <ul>
                               
                         <li><b>text :</b>por defecto, en caso de que no especifiquemos el el tipo de input, se tomara un input como texto </li>
-                        <input type="text" id="texto" name="texto" maxlength="8" required>
+                        <input class="escondirijillo"type="text" id="texto" name="texto" maxlength="8">
                         
                         <li><b>number :</b> nos permite solamente ingresar numeros, es especial para campos en los que no queremos que el usuario ingrese un dato incorrecto sin querer y necesitamos numeros</li>
                             <input type="number" id="numero" name="numero" max="100" min="-1">
@@ -207,22 +202,24 @@
                         <label for="tilde1">Opcion 1</label>
                         <input id="tilde1" name="tilde" type="checkbox">
                         <label for="tilde2">Opcion 2</label>
-                        <input id="tilde2" name="tilde" type="checkbox">
+                        <input id="tilde2" name="tilde2" type="checkbox">
                         <label for="tilde3">Opcion 3</label>
-                        <input id="tilde3" name="tilde" type="checkbox">
+                        <input id="tilde3" name="tilde3" type="checkbox">
                         <label for="tilde4">Opcion 4</label>
-                        <input id="tilde4" name="tilde" type="checkbox">
+                        <input id="tilde4" name="tilde4" type="checkbox">
                         <hr>
                         <p>Radio</p>
                         <label for="opcion1">1</label>
                         <input type="radio" id="opcion1" value="opcion1" name="gruporadio">
                         <label for="opcion2">2</label>
                         <input type="radio" id="opcion2" value="opcion2" name="gruporadio">
+                        <label for="opcion3">3</label>
+                        <input type="radio" id="opcion3" value="opcion3" name="gruporadio">
                         <hr>
                         <p>Select</p>
-                        <select id="cantidad" name="cantidad">
+                        <select id="seleccion" name="seleccion">
                             <option>Seleccione un dato</option>
-                            <option value="1">Usuario</option>
+                            <option value="1"> Usuario</option>
                             <option value="2" >Editor</option>
                             <option value="3">Admin</option>
                             <option value="4">Eliminado</option>
@@ -238,12 +235,15 @@
                             </datalist>
                         <hr>
                         <label for="archivo">Archivo</label>
-                        <input id="archivo"  name="archivo" type="file" accept=".jpg">
+                        <input id="archivo"  name="archivo" type="file" accept=".jpg" >
                         <input type="hidden"><hr>
-                        <label for="hidden1">Hidden</label>
-                        <input type="hidden" value="EsteNoSeVe">
-                        <label for="semana">Meses</label>
-                        <input type="month">
+                        <input type="hidden" id="escondido"  name="escondido" value="EsteNoSeVe">
+                        <label for="mes">Meses</label>
+                        <input type="month" id="meses" name="meses">
+                        <label for="meses">Semana</label>
+                        <input type="week" id="semana" name="semana">
+                        <label for="rango">Rango</label>
+                        <input type="range" id="range" name="range" min="1" max="5" step="0.5">
                     </ul>
                     </form>
                     </p>

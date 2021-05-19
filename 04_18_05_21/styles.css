@@ -1,0 +1,36 @@
+h1
+{
+color: blueviolet;
+}
+p
+{
+    font-size: x-small;
+}
+
+#titulo_principal
+{
+background-color: black;
+color: blanchedalmond;
+border: blue solid 5px;
+border-radius: 15px;
+padding: 5px;
+}
+
+.enfasis
+{
+    font-weight: 900;
+}
+
+p:hover
+{
+    border: chartreuse 5px solid;
+}
+.escondirijillo{
+    opacity: 0.1;
+}
+.escondirijillo:focus
+{
+    opacity: 1;
+    transition: all;
+    transition-duration: 2500ms;
+}
