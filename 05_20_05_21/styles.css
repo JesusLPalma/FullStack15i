@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    border: darkred 10px solid;
+}
+ol{
+    background-image: url('img/dp.png');
+    margin-left: 52px;
+    color: darkred;
+    font-size: 48px;
+
+}
+.pocoopaca{
+    opacity: 0.5;
+    width:100%;
+}
+
+#lista
+{
+max-width: 200px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+#unicornio:hover{
+    opacity: 0.5;
+}
+
+#unicornio:active{
+    width: 300px;
+    height: 300px;
+}
+input:focus
+{
+    background-color: darkturquoise;
+}
+.boton
+{
+    background-color: dimgrey;
+    padding: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 75px;
+    height: 50px;
+    font-size: 2em;
+    color: floralwhite;
+}
