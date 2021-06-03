@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    border: brown solid 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.caja{
+border: black 2px solid;
+display:flex;
+padding: 2rem;
+width: 20px;
+}
+body{
+    height: 100vh;
+}
+#azul{
+    background-color:
+    hsla(240, 100%, 50%, 1);
+}
+#rojo{
+    background-color:
+    hsla(0, 100%, 50%, 1);
+    height: 100px;
+}
+#verde{
+    background-color:
+    hsla(133, 100%, 50%, 1);
+}
+
+
+.cajita{
+    padding: 0.5rem;
+    background-color: rgb(2, 160, 2);
+    border-radius: 50%;
+}
+
+
